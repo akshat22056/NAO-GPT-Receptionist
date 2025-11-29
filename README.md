@@ -6,7 +6,7 @@ A voice-activated receptionist robot system that uses speech-to-text, knowledge 
 
 ### Prerequisites
 
-- **Python 2.7** (required for `body.py` - NAO robot communication)
+- **Python 2.7** (required for `body.py` - NAO robot communication) 
 - **Python 3.x** (required for `sidecar.py` and other scripts)
 - **NAO Robot SDK** (naoqi library for Python 2)
 
