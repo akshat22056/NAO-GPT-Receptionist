@@ -54,6 +54,10 @@ You must provide **your own API key** via the `GEMINI_API_KEY` environment varia
    ```bash
    export GEMINI_API_KEY="YOUR_KEY_HERE"
    ```
+If this fails, pass key explicitly in `src/format.py`
+   ```python
+   client = genai.Client(api_key="YOUR_API_KEY")
+   ```
 
 2. **NAO Robot Connection**: IF REQUIRED Update the NAO robot IP address and port in `src/body.py`:
    ```python
