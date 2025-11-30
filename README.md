@@ -50,12 +50,10 @@ pip3 install -r requirements.txt
 1. **Google GenAI API Key**:
 This project uses **Google GenAI (Gemini)** for LLM responses.  
 You must provide **your own API key** via the `GEMINI_API_KEY` environment variable.
-
-Linux / macOS (bash/zsh)
-
-```bash
-export GEMINI_API_KEY="YOUR_KEY_HERE"
-```
+   Linux / macOS (bash/zsh)
+   ```bash
+   export GEMINI_API_KEY="YOUR_KEY_HERE"
+   ```
 
 2. **NAO Robot Connection**: IF REQUIRED Update the NAO robot IP address and port in `src/body.py`:
    ```python
