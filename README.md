@@ -57,7 +57,7 @@ You must provide **your own API key** via the `GEMINI_API_KEY` environment varia
 export GEMINI_API_KEY="YOUR_KEY_HERE"
 ```
 
-###2. **NAO Robot Connection**: IF REQUIRED Update the NAO robot IP address and port in `src/body.py`:
+### 2. **NAO Robot Connection**: IF REQUIRED Update the NAO robot IP address and port in `src/body.py`:
    ```python
    nao_IP = "192.168.34.110"  # Change to your NAO robot's IP
    nao_port = 9559
