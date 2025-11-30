@@ -18,7 +18,7 @@ COMPUTE_TYPE = "int8"                      # "float16"/"int8_float16"/"int8" etc
 with open("kb.json") as f:
     faq_data = json.load(f)
 
-client = genai.Client(api_key="AIzaSyDJKq6Pyd61F6ERSOWPhopSkhyYECN5Sho")
+client = genai.Client()
 
 # ---------------------------------------------------------
 # 1) Slightly improved intent classification
