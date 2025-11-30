@@ -32,12 +32,12 @@ pip2 install flask
 
 Install required packages:
 ```bash
-pip3 install requests numpy pyaudio soundfile faster-whisper google-genai scikit-learn seaborn matplotlib
+pip3 install -r requirements.txt
 ```
 
-Or create a `requirements.txt` and install:
+Or create install:
 ```bash
-pip3 install -r requirements.txt
+pip3 install requests numpy pyaudio soundfile faster-whisper google-genai scikit-learn seaborn matplotlib
 ```
 
 **Note:** You may need to install system-level audio libraries:
