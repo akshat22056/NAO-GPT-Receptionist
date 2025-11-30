@@ -110,22 +110,11 @@ Might have to use `pkill -9 python`to kill all python processes if tts continues
 
 2. **Logs and Metrics**:
    - `src/latency_log.csv` - Records latency metrics for each interaction:
-     - `chunk_idx`: Chunk number
-     - `stt_ms`: Speech-to-text processing time
-     - `plan_ms`: Knowledge base lookup + LLM planning time
-     - `speak_ms`: NAO TTS execution time
-     - `total_ms`: Total end-to-end latency
 
 3. **Generated Files** (in `assets/` directory):
    - `output.txt` - Text output logs
    - `run_log.txt` - Runtime logs
-   - `log_run_1.jpg`, `log_run_2.jpg` - Log visualization plots
-   - `query_classi_plot.jpg` - Intent classification visualization
 
-4. **Console Output**:
-   - Transcribed user speech
-   - Bot reply text
-   - Timing information for each chunk
 
 ## Folder Structure
 
@@ -150,12 +139,3 @@ reception/
     └── eval_intent_metrics.py  # Intent classification evaluation
 ```
 
-### Key Files Description
-
-- **`run.py`**: Orchestrates the system by running both Python 2 and Python 3 processes
-- **`src/body.py`**: Flask API server that communicates with NAO robot (text-to-speech, gestures)
-- **`src/sidecar.py`**: Main voice processing loop (audio recording → STT → KB/LLM → NAO TTS)
-- **`src/format.py`**: Intent classification, knowledge base lookup, and LLM response formatting
-- **`src/kb.json`**: Structured knowledge base containing rooms, labs, contacts, and hours
-- **`src/avg_latency.py`**: Utility for analyzing latency metrics
-- **`src/eval_intent_metrics.py`**: Evaluation script for intent classification performance
