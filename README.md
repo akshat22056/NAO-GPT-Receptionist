@@ -47,20 +47,28 @@ pip3 install -r requirements.txt
 
 ### Configuration
 
-1. **NAO Robot Connection**: Update the NAO robot IP address and port in `src/body.py`:
+1. **Google GenAI API Key**:
+2. 
+This project uses **Google GenAI (Gemini)** for LLM responses.  
+You must provide **your own API key** via the `GEMINI_API_KEY` environment variable.
+
+### Set the API key
+
+#### Linux / macOS (bash/zsh)
+
+```bash
+export GEMINI_API_KEY="YOUR_KEY_HERE"
+```
+
+2. **NAO Robot Connection**: IF REQUIRED Update the NAO robot IP address and port in `src/body.py`:
    ```python
    nao_IP = "192.168.34.110"  # Change to your NAO robot's IP
    nao_port = 9559
    ```
 
-2. **Audio Device**: Update the audio device index in `src/sidecar.py`:
+3. **Audio Device**: IF REQUIRED Update the audio device index in `src/sidecar.py`:
    ```python
    DEVICE_INDEX = 6  # Change to your USB microphone device index
-   ```
-
-3. **Google GenAI API Key**: Update the API key in `src/format.py`:
-   ```python
-   client = genai.Client(api_key="YOUR_API_KEY_HERE")
    ```
 
 ## How to Run the Code
