@@ -125,14 +125,15 @@ Might have to use `pkill -9 python`to kill all python processes if tts continues
 ```
 reception/
 ├── README.md                 # This file
-├── run.py                    # Main entry point - runs body.py and sidecar.py in parallel
+├── requirements.txt
+├── run.py                   # Main entry point - runs body.py and sidecar.py in parallel
 ├── assets/                   # Output files, logs, and visualizations
 │   ├── log_run_1.jpg
 │   ├── log_run_2.jpg
 │   ├── output.txt
 │   ├── query_classi_plot.jpg
 │   └── run_log.txt
-├── docs/                     # Documentation directory (currently empty)
+├── docs/                     # Documentation directory 
 └── src/                      # Source code directory
     ├── body.py              # Flask server for NAO robot communication (Python 2)
     ├── sidecar.py           # Voice processing pipeline (Python 3)
