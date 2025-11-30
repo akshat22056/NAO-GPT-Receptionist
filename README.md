@@ -83,20 +83,7 @@ This will:
 2. Start the voice processing pipeline (`sidecar.py`) that records audio, transcribes speech, and generates responses
 
 Press `Ctrl+C` to gracefully stop both processes.
-
-### Running Individual Components
-
-**Run body.py (Flask server) separately:**
-```bash
-cd src
-python2 body.py
-```
-
-**Run sidecar.py (voice processing) separately:**
-```bash
-cd src
-python3 sidecar.py
-```
+Might have to use `pkill -9 python`to kill all python processes if tts continues to transcribe chunks
 
 **Note:** `run.sh` does not exist. Use `run.py` as described above.
 
@@ -109,14 +96,7 @@ python3 sidecar.py
    - Audio is recorded in 6-second chunks
    - Device index must be configured in `src/sidecar.py`
 
-2. **Knowledge Base**:
-   - `src/kb.json` - Contains information about:
-     - Rooms and their locations
-     - Labs and their locations
-     - Faculty contacts (name, email, office)
-     - Operating hours for various facilities
-
-3. **User Queries** (via voice):
+2. **User Queries** (via voice):
    - Greetings: "hello", "hi", "hey"
    - Directory queries: "where is [room/lab]?", "locate [location]"
    - Contact queries: "who is [faculty]?", "contact [name]"
