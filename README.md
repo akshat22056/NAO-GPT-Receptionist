@@ -48,13 +48,10 @@ pip3 install -r requirements.txt
 ### Configuration
 
 1. **Google GenAI API Key**:
-2. 
 This project uses **Google GenAI (Gemini)** for LLM responses.  
 You must provide **your own API key** via the `GEMINI_API_KEY` environment variable.
 
-### Set the API key
-
-#### Linux / macOS (bash/zsh)
+### Linux / macOS (bash/zsh)
 
 ```bash
 export GEMINI_API_KEY="YOUR_KEY_HERE"
